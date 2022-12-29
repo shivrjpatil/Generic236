@@ -8,23 +8,9 @@ namespace Generic
 {
     internal class NonGeneric
     {
-            public void ToPrintArray(int[] intArr)
+            public void ToPrintArray<T>(T[] intArr)
             {
-                foreach (var data in intArr)
-                {
-                    Console.WriteLine(data);
-                }
-            }
-            public void ToPrintArray(double[] intArr)
-            {
-                foreach (var data in intArr)
-                {
-                    Console.WriteLine(data);
-                }
-            }
-            public void ToPrintArray(char[] intArr)
-            {
-                foreach (var data in intArr)
+                foreach (T data in intArr)
                 {
                     Console.WriteLine(data);
                 }
